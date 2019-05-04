@@ -1,0 +1,15 @@
+[general]
+name                = Gidro-graf
+qgisMinimumVersion  = 2.0
+description         = Gidro-graf
+version             = 0.1
+author              = darza
+email               = sanya-poison@mail.ru
+tags                = constructor, graf, editor
+homepage            =
+tracker             =
+repository          =
+icon                = icons/icon.png
+experimental        = False
+deprecated          = False
+

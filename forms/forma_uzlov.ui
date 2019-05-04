@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>613</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>613</width>
+    <height>369</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>613</width>
+    <height>369</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="1">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btn_ctrl_ok">
+         <property name="text">
+          <string>ОК</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn_ctrl_cls">
+         <property name="text">
+          <string>Отменить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btn_ctrl_help">
+         <property name="text">
+          <string>Справка</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tb_options_uzlov">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_create_uzel">
+      <attribute name="title">
+       <string>Создание узла</string>
+      </attribute>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>11</y>
+         <width>341</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Наименование узла</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="edt_name_uzel"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="lst_type_uzel">
+          <item>
+           <property name="text">
+            <string>Колодец</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Канализация</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Источник</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Потребитель</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Развилка</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Заглушка</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Насосная станция</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Создание отчетов по узлам</string>
+      </attribute>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>11</y>
+         <width>341</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Наименование отчета</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="edt_name_support"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="lst_type_support">
+          <item>
+           <property name="text">
+            <string>Количество узлов</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Количество колодцев</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Количество канализаций</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Количесвто источников</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Количество потребителей</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Количество развилок</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Количество заглешек</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Количество насосных станций</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
